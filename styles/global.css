@@ -1,0 +1,268 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import '~antd/dist/reset.css';
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap');
+
+body {
+    font-family: 'Manrope', sans-serif;
+    font-size: var(--font-size);
+    color: var(--black);
+    overflow-x: hidden;
+}
+
+.ant-layout-sider {
+    max-width: 230px !important;
+    min-width: 230px !important;
+}
+
+.ant-menu-light .ant-menu-item-selected {
+    color: #ff0047 !important;
+    background-color: white !important;
+}
+
+.ant-menu-light.ant-menu-root.ant-menu-vertical {
+    border-inline-end: 0px !important;
+}
+
+.float-container {
+    border: 1px solid rgba(51, 51, 51, 0.3);
+    border-radius: 3px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    position: relative;
+    width: 100%;
+}
+
+.float-container .css-dev-only-do-not-override-ixblex {
+    box-shadow: none !important;
+}
+
+.float-container > input {
+    border: none !important;
+    font-size: 16px;
+    outline: 0;
+    padding: 16px 0 10px;
+    width: 100%;
+}
+
+.float-container > input:focus {
+    border: none !important;
+    font-size: 16px;
+    outline: 0;
+    padding: 16px 0 10px;
+    width: 100%;
+}
+
+.float-container > label {
+    font-size: 10px;
+    position: absolute;
+    transform-origin: top left;
+    transform: translate(0, 16px) scale(1);
+    transition: all 0.1s ease-in-out;
+}
+
+/** active label */
+
+.billing .ant-table-thead > tr > th {
+    background: white !important;
+    color: #6900b8 !important;
+    font-weight: 700 !important;
+    font-size: 18px !important;
+    line-height: 25px !important    ;
+}
+
+.dashboard-billing .ant-table-thead > tr > th {
+    background: white !important;
+    color: #6900b8 !important;
+    font-size: medium;
+}
+
+.ant-table-cell {
+    font-size: 16px !important;
+    font-weight: 500 !important;
+}
+
+:where(.css-dev-only-do-not-override-ixblex).ant-form label {
+    font-size: 18px !important;
+    margin-bottom: 2px !important;
+}
+
+.ant-form-item {
+    margin-top: 3px !important;
+}
+
+:where(.css-dev-only-do-not-override-ixblex)[class^='ant-layout'],
+:where(.css-dev-only-do-not-override-ixblex)[class*=' ant-layout'] {
+    font-family: inherit;
+}
+
+/* .number-with-commas::before {
+    content: attr(data-number) ',';
+} */
+
+.bordered-table {
+    border: 1px solid rgba(51, 51, 51, 0.2);
+    border-radius: 3px;
+}
+
+.performance-card {
+    border: 1px solid rgba(51, 51, 51, 0.2);
+    border-radius: 3px;
+}
+
+.ant-breadcrumb {
+    color: #333333;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.ant-breadcrumb .ant-breadcrumb-separator {
+    margin-inline: 8px;
+    color: #333333;
+}
+
+.bordered {
+    border: 1px solid rgba(51, 51, 51, 0.2);
+    border-radius: 3px;
+}
+
+/* :where(.css-dev-only-do-not-override-ixblex).ant-checkbox .ant-checkbox-inner {
+    width: 20px !important;
+    height: 20px !important;
+    border: 1.5px solid #6900b8 !important;
+    border-radius: 3px !important;
+} */
+
+.report-section-1 .ant-select-selector {
+    border: 1px solid #333333 !important;
+    border-radius: 3px !important;
+}
+
+.report-box-border {
+    border: 1px solid rgba(196, 196, 196, 0.5);
+    border-radius: 3px;
+}
+
+.dynamic-filter-section .ant-select-selector {
+    border: 1px solid rgba(196, 196, 196, 0.3);
+    border-radius: 3px;
+}
+
+.billing-box-border {
+    border: 1px solid rgba(196, 196, 196, 0.5);
+    border-radius: 3px;
+}
+
+.circle {
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    color: white;
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(51, 51, 51, 0.6);
+    border-radius: 3px;
+    width: 200px;
+    padding: 12px;
+}
+
+.input-wrapper input {
+    border: none;
+}
+
+.input-wrapper input:focus {
+    outline: none;
+}
+.ant-input:focus {
+    box-shadow: unset;
+}
+
+.currency {
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.input-wrapper-ad {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(51, 51, 51, 0.3);
+    border-radius: 3px;
+    width: 300px;
+    padding: 12px;
+}
+
+.input-wrapper-ad input:focus {
+    outline: none;
+}
+
+.html-uploader .ant-upload.ant-upload-select {
+    width: 200px !important;
+    height: 40px !important;
+}
+
+.shadow {
+    opacity: 0.3;
+}
+
+.shadow::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.ant-checkbox .ant-checkbox-inner {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    border: 2px solid #6900b8;
+    border-radius: 3px;
+}
+
+.ant-checkbox-checked .ant-checkbox-inner {
+    background-color: #6900b8;
+}
+
+.ant-checkbox-checked .ant-checkbox-inner:hover {
+    background-color: #6900b8;
+}
+
+.ant-checkbox .ant-checkbox-input:hover {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    border: 1.5px solid #ff0047;
+    border-radius: 3px;
+    outline: unset;
+}
+
+.app-search {
+    border: 1px solid #6900b8 !important;
+    border-radius: 3px;
+}
+.country-search {
+    border: 1px solid #c4c4c4;
+    border-radius: 3px;
+}
+
+.ant-steps-item-tail {
+    margin-top: 9px !important;
+    background-color: #333333 !important;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
